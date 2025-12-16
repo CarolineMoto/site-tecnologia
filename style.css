@@ -1,2 +1,22 @@
 @charset "UTF-8";
 
+:root {
+    --fundo-principal: #F4F6F9;
+    --texto: #222222;
+    --texto-inverso: ;
+    --destaque: ;
+    --destaque-inverso: ;
+    --fundo-card: ;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Space Grotesk", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--fundo);
+}
