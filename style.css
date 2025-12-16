@@ -2,13 +2,13 @@
 
 :root {
     --fundo-principal: #F4F6F9;
-    --texto: #222222;
-    --texto-inverso: ;
-    --destaque: ;
-    --destaque-inverso: ;
-    --fundo-card: ;
+    --texto: #313131;
+    --texto-inverso: #FFFFFF;
+    --destaque: #418CFF;
+    --destaque-inverso: #D6E4FF;
+    --fundo-card: #002B5B;
 
-    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-padrão: 'Inter', sans-serif;
     --fonte-destaque: "Space Grotesk", sans-serif;
 }
 
@@ -18,5 +18,86 @@
 }
 
 body {
-    background-color: var(--fundo);
+    background-color: var(--fundo-principal);
+    font-family: var(--fonte-padrão);
+}
+
+a.externo::after {
+    content: '\00A0\2197';
+}
+
+header {
+    background-color: var(--fundo-card);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: var(--fundo-principal);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.192);
+    font-weight: normal;
+}
+
+header > p {
+    color: var(--fundo-principal);
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.068);
+    padding-bottom: 50px;
+}
+
+nav {
+    background-color: var(--fundo-card);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+nav > a {
+    color: var(--texto-inverso);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--destaque-inverso);
+    color: var(--destaque);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--texto);
+    font-family: var(--fonte-padrão);
+    font-weight: normal;
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: var(--fonte-padrão);
+    color: var(--texto);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--destaque), transparent);
+    text-indent: 8px;
+    font-weight: normal;
 }
