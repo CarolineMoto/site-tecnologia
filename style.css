@@ -2,11 +2,11 @@
 
 :root {
     --fundo-principal: #F4F6F9;
-    --texto: #313131;
-    --texto-inverso: #FFFFFF;
+    --texto: #333333;
+    --texto-inverso: #D1D1D1;
     --destaque: #418CFF;
     --destaque-inverso: #D6E4FF;
-    --fundo-card: #002B5B;
+    --fundo-card: #333333;
 
     --fonte-padrão: 'Inter', sans-serif;
     --fonte-destaque: "Space Grotesk", sans-serif;
@@ -100,4 +100,60 @@ main h2 {
     background-image: linear-gradient(to right, var(--destaque), transparent);
     text-indent: 8px;
     font-weight: normal;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+main img {
+    width: 98%;
+}
+
+div.video {
+    background-color: var(--fundo-card);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main strong {
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+main a {
+    color: var(--destaque);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--destaque-inverso);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--destaque);
+}
+
+footer {
+    background-color: var(--fundo-card);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    font-weight: bold;
 }
