@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
-:root {
-    --fundo-principal: #F4F6F9;
-    --texto: #333333;
-    --texto-inverso: #D1D1D1;
-    --destaque: #418CFF;
-    --destaque-inverso: #D6E4FF;
-    --fundo-card: #333333;
+:root{
+    --fundo-padrao: #F4F6F9;
+    --fundo-header: #000000;
+    --fundo-nav: #414141;
+    --texto-padrao: #111111;
+    --header-inverso:#FFFFFF;
+    --destaque: #2563EB;
+    --destaque-inverso: #8FB3FF;
 
-    --fonte-padrão: 'Inter', sans-serif;
-    --fonte-destaque: "Space Grotesk", sans-serif;
+    --fonte-titulo: "Inter", sans-serif;
+    --fonte-padrao: "Merriweather", serif;
 }
 
 * {
@@ -18,8 +19,8 @@
 }
 
 body {
-    background-color: var(--fundo-principal);
-    font-family: var(--fonte-padrão);
+    background-color: var(--fundo-padrao);
+    font-family: var(--fonte-padrao);
 }
 
 a.externo::after {
@@ -27,41 +28,41 @@ a.externo::after {
 }
 
 header {
-    background-color: var(--fundo-card);
+    background-color: var(--fundo-header);
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
 }
 
 header > h1 {
-    color: var(--fundo-principal);
-    font-family: var(--fonte-destaque);
+    color: white;
+    font-family: var(--fonte-titulo);
     margin-bottom: 20px;
-    font-size: 3em;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.192);
-    font-weight: normal;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.116);
+    font-weight: 800;
 }
 
 header > p {
-    color: var(--fundo-principal);
-    font-family: var(--fonte-padrão);
+    color: white;
+    font-family: var(--fonte-padrao);
     font-size: 1.2em;
     max-width: 600px;
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.068);
     padding-bottom: 50px;
 }
 
 nav {
-    background-color: var(--fundo-card);
+    background-color: var(--fundo-nav);
     padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 7px 7px rgba(255, 255, 255, 0.212);
+    text-align: center;
 }
 
 nav > a {
-    color: var(--texto-inverso);
+    color: white;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -70,90 +71,9 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--destaque-inverso);
-    color: var(--destaque);
+    background-color: none;
+    color: rgb(145, 140, 140);
 }
 
-main {
-    min-width: 300px;
-    max-width: 1000px;
-    background-color: white;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 
-main h1 {
-    color: var(--texto);
-    font-family: var(--fonte-padrão);
-    font-weight: normal;
-    font-size: 2em;
-}
 
-main h2 {
-    font-family: var(--fonte-padrão);
-    color: var(--texto);
-    font-size: 1.3em;
-    background-image: linear-gradient(to right, var(--destaque), transparent);
-    text-indent: 8px;
-    font-weight: normal;
-    margin-bottom: 10px;
-}
-
-main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 1.7em;
-}
-
-main img {
-    width: 98%;
-}
-
-div.video {
-    background-color: var(--fundo-card);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    position: relative;
-    padding-bottom: 59%;
-}
-
-div.video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-
-main strong {
-    color: var(--destaque);
-    font-weight: bold;
-}
-
-main a {
-    color: var(--destaque);
-    text-decoration: none;
-    font-weight: bold;
-    background-color: var(--destaque-inverso);
-    padding: 2px 6px;
-}
-
-main a:hover {
-    text-decoration: underline;
-    color: var(--destaque);
-}
-
-footer {
-    background-color: var(--fundo-card);
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-    font-weight: bold;
-}
