@@ -75,5 +75,50 @@ nav > a:hover {
     color: rgb(145, 140, 140);
 }
 
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--fundo-padrao);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+}
+
+main h1 {
+    color: var(--texto-padrao);
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1.1em;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.subtitulo {
+    font-family: var(--fonte-padrao);
+    color: #555;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-family: var(--fonte-padrao);
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
 
 
