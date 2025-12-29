@@ -8,6 +8,7 @@
     --header-inverso:#FFFFFF;
     --destaque: #2563EB;
     --destaque-inverso: #8FB3FF;
+    --texto-agradavel: #555;
 
     --fonte-titulo: "Inter", sans-serif;
     --fonte-padrao: "Merriweather", serif;
@@ -21,10 +22,6 @@
 body {
     background-color: var(--fundo-padrao);
     font-family: var(--fonte-padrao);
-}
-
-a.externo::after {
-    content: '\00A0\2197';
 }
 
 header {
@@ -81,43 +78,26 @@ main {
     background-color: var(--fundo-padrao);
     margin: auto;
     margin-bottom: 30px;
-    padding: 40px 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
 
 main h1 {
-    color: var(--texto-padrao);
+    color: black;
     font-family: var(--fonte-titulo);
-    font-weight: 800;
     font-size: 3em;
-    line-height: 1.1em;
-    margin-bottom: 16px;
-    letter-spacing: -0.02em;
-}
-
-main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 2em;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 30px;
 }
 
 .subtitulo {
-    font-family: var(--fonte-padrao);
-    color: #555;
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    color: var(--texto-agradavel);
 }
 
-.autor {
-    font-family: var(--fonte-padrao);
-    color: #666;
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
+
+
+
 
 
 
