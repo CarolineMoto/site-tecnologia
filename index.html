@@ -6,6 +6,7 @@
     <title>HTML, CSS e JavaScript</title>
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/favicon-32x32">
     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/3f7e0f2261.js" crossorigin="anonymous"></script>
 
     <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +16,11 @@
 </head>
 <body>
     <header>
-        <h1>TECHDAY</h1>
+        <h1>TECHDAY &lt;/&gt;</h1>
         <p>Te mantendo atualizado sobre tudo o que está acontecendo no mundo Tech</p>
     </header>
 
-    <nav>
+    <nav class="cabecalho">
         <a href="#">Home</a>
         <a href="#">Notícias</a>
         <a href="#">Tecnologias</a>
@@ -33,9 +34,10 @@
         <article>
             <h1>HTML, CSS e JavaScript</h1>
             <p class="subtitulo">As três principais tecnologias utilizadas no desenvolvimento web</p>
-            <p class="autor">Por Caroline Moto</p>
-
-            <p>Se você é dev ou está iniciando na área de tecnologia, com certeza já ouviu falar de <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Essas três tecnologias estão por trás das interfaces digitais modernas e trabalham juntas, estruturando conteúdos, definindo aparência visual e permitindo interações dinâmicas nas páginas. São ferramentas amplamente utilizadas e necessárias no desenvolvimento <strong>front-end</strong>.</p>
+            <p class="autor">Por Caroline Moto, para a TechDay</p>
+            <p class="data">12/01/2026 às 10h05</p>
+            
+            <p class="comeco">Se você é dev ou está iniciando na área de tecnologia, com certeza já ouviu falar de <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Essas três tecnologias estão por trás das interfaces digitais modernas e trabalham juntas, estruturando conteúdos, definindo aparência visual e permitindo interações dinâmicas nas páginas. São ferramentas amplamente utilizadas e necessárias no desenvolvimento <strong>front-end</strong>.</p>
 
             <picture>
                 <img src="imagens/conjunto.jpg" alt="Logos">
@@ -71,7 +73,25 @@
             <p>Então é isso! Espero que você tenha gostado deste artigo e dessa curiosidade sobre a origem de <strong>HTML, CSS e JavaScript</strong>, três tecnologias fundamentais que seguem moldando a forma como criamos e compartilhamos conteúdos na web.</p>
         </article>
     </main>
+
     <footer>
+        <p class="titulo">TECHDAY &lt;/&gt;</p>
+        <nav class="rodape">
+            <a href="#">Fale Conosco</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Anuncie</a>
+            <a href="#">Termos de Uso e Privacidade</a>
+        </nav>
+        <nav class="icones">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </nav>
         <p>&copy 2025. Todos os direitos reservados.</p>
     </footer>
 </body>
