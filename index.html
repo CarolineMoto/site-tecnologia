@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML, CSS e JavaScript</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/favicon-32x32">
     <link rel="stylesheet" href="style.css">
      <script src="https://kit.fontawesome.com/3f7e0f2261.js" crossorigin="anonymous"></script>
@@ -19,15 +20,18 @@
         <h1>TECHDAY <span>&lt;/&gt;</span></h1>
         <p class="slogan">Te mantendo atualizado sobre tudo o que está acontecendo no mundo Tech</p>
     </header>
-
+    
     <nav class="cabecalho">
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Tecnologias</a>
-        <a href="#">Jogos</a>
-        <a href="#">Informática</a>
-        <a href="#">Softwares</a>
-        <a href="#">Contato</a>   
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <div class="menu" id="itens">
+                <a href="#">Home</a>
+                <a href="#">Notícias</a>
+                <a href="#">Tecnologias</a>
+                <a href="#">Jogos</a>
+                <a href="#">Informática</a>
+                <a href="#">Softwares</a>
+                <a href="#">Contato</a>
+            </div>   
     </nav>
 
     <main>
@@ -94,5 +98,12 @@
         </nav>
         <p>&copy 2025. Todos os direitos reservados.</p>
     </footer>
+<script>
+    const itens = document.getElementById('itens');
+
+    function clickMenu() {
+        itens.classList.toggle('aberto');
+    }
+</script>
 </body>
 </html>
