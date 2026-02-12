@@ -1,2 +1,2 @@
 # site-tecnologia
-Página informativa explicando como a Internet, o HTML e o CSS funcionam juntos.
+Página informativa explicando como a Internet, o HTML, CSS e JS funcionam juntos.
